@@ -2,7 +2,7 @@
 
 if [ ! -d "zoo-amit" ]; then
   echo "Cloning application from GitHub..."
-  git clone https://github.com/funes1996/zoo-amit.git
+  git clone https://github.com/Funes96/my-zoo-app.git
 else
   echo "Pulling latest changes from GitHub..."
   cd zoo-amit
