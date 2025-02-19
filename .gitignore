@@ -1,6 +1,9 @@
-config
+config/
+.venv/
+
+*.pyc
+__pycache__/
+entitis/__pycache__/
+flows/__pycache__/
+
 test.py
-.venv
-entitis/__pycache__
-flows/__pycache__
-__pycache__
