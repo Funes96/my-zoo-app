@@ -8,4 +8,4 @@ services:
       - PYTHONUNBUFFERED=1
     restart: always
     volumes:
-      - ./config:/opt/config
+      - .:/opt
