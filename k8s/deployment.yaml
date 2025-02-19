@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: zoo-app-deployment
+  labels:
+    app: zoo-app
+spec:
+  replicas: 2  # מריץ שני עותקים של האפליקציה לניסוי
+  selector:
+    matchLabels:
+      app: zoo-app
+  template:
+    metadata:
+      labels:
+        app: zoo-app
+    spec:
+      containers:
+      - name: zoo-app-container
+        image: funes1996/my-zoo-app:latest
+        ports:
+        - containerPort: 8000
